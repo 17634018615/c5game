@@ -1,0 +1,88 @@
+.floor-left{
+	width: 290px;
+    float: left;
+    margin-right: 20px;
+    border-top: 2px solid #1b1f2a;
+    background: #141821;
+}
+#lbys #lbhz li{
+	background: none;
+}
+.border {
+    width: 100%;
+     border-top: none; 
+}
+#lbys{
+	float: left;
+    width: 810px;
+}
+#lbys .tabPane ul li{
+	margin-right: 15px;
+	width: 167px;
+	height: 160px;
+	background: #2c3040;
+    color: #939395;
+    float: left;
+    border: 2px solid #2c3040;
+    position: relative;
+    box-sizing: content-box;
+}
+#lbys ul li a{
+	width: 167px;
+	height: 110px;
+}
+.zuozuo{
+    background: #232836;
+    overflow: hidden;
+    margin-bottom: 1px;
+}
+.liebiao{
+    width: 75px;
+    float: left;
+    padding: 15px 0 15px 10px;
+    color: #e4b35a;
+}
+.liebiao span{
+	position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    /*抗锯齿效果                更好*/
+    -webkit-font-smoothing: antialiased;
+}
+.neirong{
+    width: 215px;
+    float: left;
+    background: #1b1f2a;
+    padding: 15px 0 15px 15px;
+}
+.neirong a{
+	padding: 0 5px;
+    line-height: 22px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    white-space: nowrap;
+    display: inline-block;
+}
+.neirong a:nth-child(1){
+	border: 1px solid #b2b2b2 !important;
+	color: #e4b35a;
+}
+.putong{
+	color: rgb(176, 195, 217);
+}
+.xiyou{
+	color: rgb(75, 105, 255);
+}
+.shenqi{
+	color: rgb(211, 44, 230);
+}
+.chuanshuo{
+	color: rgb(235, 75, 75);
+}
+.shishi{
+	color: #e4ae39;
+}
