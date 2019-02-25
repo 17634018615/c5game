@@ -7,6 +7,7 @@
 <link rel="stylesheet" type="text/css" href="css/dota2.css">
 </head>
 <!-- 轮播图 -->
+<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
 <script type="text/javascript" src="js/cssTools.js" ></script>
 <script type="text/javascript" src="js/mover1810.js" ></script>
 <script type="text/javascript" src="js/doto2.js" ></script>
@@ -33,8 +34,8 @@
 				</ul>
 			</div>
 			<div class="daohang">
-				<a href="#">登录</a>
-				<a href="#">注册用户</a>
+				<a href="#" id="dl01">登录</a>
+				<a href="#" id="zc01">注册用户</a>
 				<a href="#">我要充值</a>
 				<a href="#">我要出售</a>
 				<a href="#">库存估价</a>
@@ -59,7 +60,7 @@
 				<li><a href="#">CDK&游戏</a></li>
 				<li><a href="#">游戏罐</a></li>
 				<li><a href="#">资讯</a></li>
-				<li><a href="#">我的背包</a></li>
+				<li><a href="gouwuche.html">我的背包</a></li>
 				<li><a href="#">个人中心</a></li>
 			</ul>
 		</div>
@@ -83,8 +84,8 @@
 					</div>
 				</div>
 				<div class="user">
-					<a href="#denglu">登录</a>
-					<a href="">注册</a>
+					<a id="dl02">登录</a>
+					<a id="zc02">注册</a>
 				</div>
 			</div>
 			<div class="floor-left">
@@ -155,8 +156,8 @@
 					<li id="lb1"><a>按时间</a></li>
 				</ul>
 				<div class="tabPane" id="p0">
-					<ul class="tabPaneUl">
-						<li class="zuixin">
+					<ul class="tabPaneUl" id="shangpin">
+						<!-- <li class="zuixin">
 							<a class="shang" href="">
 								<img src="img/jyhj.png"/>
 							</a>
@@ -347,7 +348,7 @@
 								</span>
 								<span class="pulyou">31件在售</span>
 							</p>
-						</li>
+						</li> -->
 					</ul>
 					<a href="#" class="duo">更多</a>
 				</div>
@@ -678,29 +679,30 @@
 	<div id="fh" onclick="fh()">
 		<img src="img/fh.png"/>
 	</div>
-	<div id="denglu">
 <!-- 登录 -->
+	<div id="denglu">
+	</div>
 		<div class="xiaodl"></div>
 		<div class="waibox" id="dlck">
-			<label type="button" class="cuohao">×</label>
+			<label type="button" id="dlcuo" class="cuohao">×</label>
 			<div class="zhuti">
 				<div class="zhuti1">
 					<form id="dllb" action="php/loginCheck02.php" method="post">
 						<div class="dlZuo">
 							登录                    
-		            		<a href="#" class="zc1">立即注册
+		            		<a href="#" id="zc03" class="zc1">立即注册
 		            		</a>
 		        		</div>
 		        		<div class="wbk">
 		            		<label class="huiyuan"></label>
-		            		<input id="" class="" placeholder="会员名"/>
+		            		<input id="" class="" placeholder="会员名" style="color: #999;"/>
 		            	</div>
 		        		<div class="wbk">
 		            		<label class="mima"></label>
-		            		<input id="" class="" placeholder="密码" />
+		            		<input id="" class="" placeholder="密码" style="color: #999;"/>
 		            	</div>
 		    			<div class="wbk">
-		            		<input id="" class="" placeholder="验证码"/>
+		            		<input id="" class="" placeholder="验证码" style="color: #999;"/>
 		            		<img style="cursor:pointer" class=""/>
 				        </div>
 		                <div class="mmkuang">
@@ -727,38 +729,38 @@
 <!-- 注册 -->
 		<div class="xiaodl"></div>
 		<div class="waibox" id="zhuce">
-			<label type="button" class="cuohao">×</label>
+			<label type="button" id="zccuo" class="cuohao">×</label>
 			<div class="zhuti">
 				<div class="zhuti1">
 					<form id="dllb" action="php/regsave.php" method="post">
 						<div class="dlZuo">
 							注册                    
-		            		<a href="#" class="zc1">已有账号 点击登录
+		            		<a href="#" id="dl03" class="zc1">已有账号 点击登录
 		            		</a>
 		        		</div>
 		        		<div class="wbk">
 		            		<label class="huiyuan"></label>
-		            		<input id="yonghu" class="" placeholder="会员名"/>
+		            		<input id="yonghu" name="username" class="" placeholder="会员名" style="color: #999;"/><span id="userSpan" style="color: #999;"></span>
 		            	</div>
 		        		<div class="wbk">
 		            		<label class="mima"></label>
-		            		<input id="" class="" placeholder="至少6位长度的数字或者字母组合" />
+		            		<input id="mima" type="password" name="userpass" class="" placeholder="至少6位长度的数字或者字母组合" style="color: #999;"/><span style="color: #999;"></span>
 		            	</div>
 		            	<div class="wbk">
 		            		<label class="mima"></label>
-		            		<input id="" class="" placeholder="重复密码。" />
+		            		<input  type="password" id="mima2" class="" placeholder="重复密码。" style="color: #999;" /><span style="color: #999;"></span>
 		            	</div>
 		            	<div class="wbk">
 		            		<label class="hyxm"></label>
-		            		<input id="" class="" placeholder="真实姓名(可选)" />
+		            		<input id="userName"  name="truename" class="" placeholder="真实姓名(可选)" style="color: #999;"/><span style="color: #999;"></span>
 		            	</div>
 		            	<div class="wbk">
 		            		<label class="sfz"></label>
-		            		<input id="" class="" placeholder="身份证号(可选)" />
+		            		<input id="cardId"  name="usersfz" class="" placeholder="身份证号(可选)" style="color: #999;"/><span style="color: #999;"></span>
 		            	</div>
 		    			<div class="wbk">
 		            		<input id="" class="" placeholder="验证码"/>
-		            		<img style="cursor:pointer" class=""/>
+		            		<img style="cursor:pointer" class="" style="color: #999;"/>
 				        </div>
 		                <div class="mmkuang">
 		                    <span class="jzmm">
@@ -781,6 +783,5 @@
 		    	</div>
 	    	</div>
 		</div>
-	</div>
 </body>
 </html>

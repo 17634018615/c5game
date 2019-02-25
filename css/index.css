@@ -7,7 +7,7 @@ body,p,dl,dd,ul,ol,li,div,h1,h2,h3,h4,h5,h6,form,input,table,tr,td{
 }
 html body{
     height: 100%;
-}
+} 
 body{
 	color: #afb0b2;
 	font: 13px/1.5 'Helvetica Neue','Lucida Grande',Microsoft YaHei,Arial,'Liberation Sans',sans-serif;
@@ -1016,24 +1016,24 @@ html a:hover{
     top: 0;
     left: 0;
     width: 100%;
+    height: 100%;
     background: rgb(0,0,0,.5);
     z-index: 1000;
-    padding: 25% 0;
 }
 .waibox{
     padding: 5px;
-    position: relative;
+    position: fixed;
     top: 0;
     left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
     background: rgba(117, 130, 143);
     border: 1px solid #696f87;
     width: 510px;
-    height: 510px;
+    height: 323px;
     overflow: hidden;
-    margin: auto;
     display: table;
-    height: 100%;
-    margin: auto;
     z-index: 1001;
 }
 .xiaodl{
@@ -1181,6 +1181,16 @@ html a:hover{
 }
 .ft-gold{
     color: #e4b35a;
+} 
+#zhuce{
+    height: 493px;
+}
+.wbk span{
+    position: absolute;
+    top: 5px;
+    right: -15px;
+    font-size: 16px;
+    font-weight: 600;
 }
 #dlck{
     display: none;

@@ -9,7 +9,7 @@
 	if(!$conn){
 		echo "服务器端出错！";
 	}else{
-		mysql_select_db("mydb1810",$conn);
+		mysql_select_db("c5game",$conn);
 
 		$sqlstr = "select * from userinfo where username='$username'and userpass='$userpass'";
 

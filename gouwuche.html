@@ -4,22 +4,267 @@
 	<meta charset="UTF-8">
 	<title>购物车</title>
 	<link rel="stylesheet" type="text/css" href="css/gouwuche.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
 </head>
 <body>
-<!-- header -->
-	<div class="head">
-		<div class="header">
-			<div class="head-left">
-				<a href=""><img src="img/c5logo.png"></a>
+<!-- 头部 -->
+	<div id="header">
+		<div id="headTop">
+			<a href="#">
+				<span>
+					<img src="img/c5logo.png"/>
+				</span>
+			</a>
+			<div class="guoji">
+				<ul class="htright">
+					<li class="zhong">
+						<a href="#"><img src="img/zg.jpg"></a>
+					</li>
+					<li class="wai yg">
+						<a href="#"><img src="img/yg.jpg"></a>
+					</li>
+					<li class="wai dg">
+						<a href="#"><img src="img/dg.jpg"></a>
+					</li>
+				</ul>
 			</div>
-			<div class="head-right">
-				
+			<div class="daohang">
+				<a href="#">登录</a>
+				<a href="#">注册用户</a>
+				<a href="#">我要充值</a>
+				<a href="#">我要出售</a>
+				<a href="#">库存估价</a>
 			</div>
+		</div>
+		<div id="headBtm">
+			<ul class="navLinks">
+				<li><a href="index.html">首页</a></li>
+				<li><a href="dota2.html">DOTA2</a></li>
+				<li><a href="csgo.html">CS:GO</a></li>
+				<li><a href="#">H1Z1</a></li>
+				<li class="jtys">
+					<a href="#">
+						军团要塞2
+						<b class="sanjiao"></b>
+					</a>
+					<ul class="menu">
+						<li><a href="#">steam</a></li>
+						<li><a href="#">收获日2</a></li>
+					</ul>
+				</li>
+				<li><a href="#">CDK&游戏</a></li>
+				<li><a href="#">游戏罐</a></li>
+				<li><a href="#">资讯</a></li>
+				<li class="current"><a href="#">我的背包</a></li>
+				<li><a href="#">个人中心</a></li>
+			</ul>
 		</div>
 	</div>
 <!-- 购物栏 -->
-	<div class="gouwu">
-		
+<div class="center">
+	<div class="box4">
+		<div class="com-wrapper">
+			<div class="mod-shoppingCart">
+				<div class="mod-shoppingCart-hd com-tit">
+					<h2 class="h2">购物车</h2>
+				</div>
+				<div class="mod-shoppingCart-bd">
+					<table class="com-table">
+						<thead>
+                            <tr>
+                                <th>商品</th>
+                                <th width="25%">商品名称</th>
+                                <th width="15%">印花</th>
+                                <th>数量</th>
+                                <th>单价</th>
+                                <th>总价</th>
+                                <th>操作</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        	<tr>
+								<td>    
+                                    <div class="com-img">
+                                        <img src="img/lj.png" alt="">
+                                    </div>
+                                    </td>
+                                <td>
+                                    <div class="product-cname">
+                                        <div class="pname">
+                                            <a href="/help/15" target="_blank" class="tradeType">
+                                                <img title="人工发货" src="img/person_icon.png">  
+                                            </a>AWP（纪念品） | 巨龙传说
+                                        </div>
+                                        <div class="ptype">
+                                            <img class="nail" src="img/img-csgo.png" width="32" height="32" alt="">
+                                            <span class="info" style="width: 230px;">
+                                                <span class="name">CS:GO</span>
+                                                <span class="mosun"> 磨损：0.06739748269319534302
+                                                </span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </td>
+                                    <td class="t3">
+                                        <img src="img/imt_gold.c8167f57d7e7fcdcaaccebf35b2294a9b918158f.png" width="30" title=" Immortals（金色）| 2017年克拉科夫锦标赛">
+                                        <img src="img/big_gold.01cecb6347daf84dfb61638572b652e2696f97c5.png" width="30" title=" BIG（金色）| 2017年克拉科夫锦标赛">
+                                        <img src="img/sig_lucas1_gold.0b19e649d10fd0360cb465271ddbce770b2ee277.png" width="30" title=" LUCAS1（金色）| 2017年克拉科夫锦标赛">
+                                        <img src="img/pgl_gold.26e534d8e0d98a534c65d7e629c50308e2ab9b94.png" width="30" title=" PGL（金色）| 2017年克拉科夫锦标赛">
+                                    </td>
+                                    <td>
+                                        <span>1</span>
+                                    </td>
+                                    <td>
+                                        <span>￥138888.00</span>
+                                    </td>
+                                    <td>
+                                    	<strong>￥138888.00</strong>
+                                    </td>
+                                    <td class="icon-cuo">
+                                        <img src="img/cuo.png">
+                                    </td>
+                                </tr>
+                            </tbody>
+					</table>
+				</div>
+				<div class="mod-shoppingCart-ft">
+					<div class="p1">
+                        <a href="/">&lt;&lt; 继续购物</a>
+                    </div>
+				</div>
+				<form action="">
+					<div class="mod-paymentMethod" style="width: 100%">
+					</div>
+					<div class="mod-paymentMethod-hd com-tit">
+						<h3 class="h2">支付方式</h3>
+					</div>
+					<div class="clearfix pm-tit">
+                    </div>
+                    <div class="mod-paymentMethod-bd" style="float: right;">
+                    	<ul>
+                    		<li>
+                    			<label class="com-checkbox">
+		                			<span></span>
+		                			<img src="img/payway-alipay_2019.png" class="pics"/>
+		                			<div class="title">支付宝</div>
+                    			</label>
+                    		</li>
+                    		<li>
+                    			<label class="com-checkbox">
+	                    			<span></span>
+	                    			<img src="img/payway-wechat_2019.png"  class="pics"/>
+	                    			<div class="title">
+	                    				微信
+	                    			</div>
+                    			</label>
+                    		</li>
+                    	</ul>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="mod-allChange">
+                    	<span class="item">
+                            <span class="label">购物车数量：</span>
+                            <span class="txt" style="display: inline;">2</span>
+                            <span class="label" style="margin-left: 30px;">购物车总金额：</span>
+                            <span class="txt max">
+                                <span>￥13227.00</span>
+                            </span>
+                        </span>
+                        <span class="item">
+                            <span class="label">优惠券抵扣：</span>
+                            <span class="txt max">- ￥<span id="span_voucher_money">0.00</span></span>
+                        </span>
+                        <span class="item c-blue">
+                            <span class="label">实际支付金额：</span>
+                            <span class="txt max">￥
+                                <span style="font-weight: bold;font-size: 18px;" id="span_pay_money">13227.00</span>
+                            </span>
+                        </span>
+                        <div class="mod-allChange-btn">
+                            <input type="button" id="pay_order" value="支付" class="pay com-btn com-green">
+                        </div>
+                    </div>
+				</form>
+			</div>
+		</div>
 	</div>
+</div>
+<!-- footer -->
+	<div class="border"></div>
+	<div id="footer">
+	    <div class="footer-hd">
+	        <ul class="footer-links">
+	            <li>
+	                <div class="title title1">新手上路</div>
+	                <div class="links">
+	                    <a href="">饰品存取</a>
+	                    <a href="">出售求购</a>
+	                    <a href="">常见问题</a>
+	                    <a class="service" href="">联系客服</a>
+	                </div>
+	            </li>
+	            <li>
+	                <div class="title title3">支付方式</div>
+	                <div class="links zhanghao">
+	                	<a href="" id="zhifub"></a>
+	                	<a href="" id="weixin"></a>
+	                	<a href="" id="yinlian"></a>
+	                </div>
+	            </li>
+	            <li>
+	                <div class="title title4">家长监护</div>
+	                <div class="links">
+	                    <a href="">申请流程</a>
+	                    <a href="">申请引导</a>
+	                </div>
+	            </li>
+	            <li class="last">
+	                <div class="title title5">关于c5</div>
+	                <div class="links">
+	                    <a href="">网站公告</a>
+	                    <a href="">关于我们</a>
+	                    <a target="_blank" href="">STEAM组</a>
+	                    <a>商务邮箱：bd@c5game.com</a>
+	                    <a>建议反馈：feedback@c5game.com</a>
+	                    <a>举报投诉：ceo@c5game.com</a>
+	                </div>
+	            </li>
+	    	</ul>
+	        <div class="friend-links mt-20">
+	            <p>友情链接：</p>
+	            <p class="friend-links-content">
+	                <a href="" target="_blank">狐狸购</a>
+	                <a href="" target="_blank">交易虎</a>
+	            </p>
+	        </div>
+	    </div>
+	        <div class="footer-bd">
+	            <div class="footer-bd-content clearfix">
+	                <div class="safe-union pull-left">
+		                <a target="_blank" href="">
+		                    <img src="img/safe-union.png" alt="安全联盟" class="img-safe-union">
+		                </a>
+	                </div>
+	                <div class="copyright pull-left">
+	                    <p class="company">  </p>
+	                    <p>Copyright©2016 c5game.com All rights reserved. 浙ICP备16013980号-2 经营性许可证:浙B2-20161004.
+	                        浙网文［2017］6090-362号</p>
+	                    <p>
+	                        <a target="_blank" href="">
+	                        <img src="img/备案图标.png" alt="" style="float: left;">
+	                            <span style="color: #4e4f53;line-height: 22px;margin-left: 4px;">浙公网安备 33010602009731号</span>
+	                        </a>
+	                    </p>
+	                    <a style="color: #4e4f53" href="">关于我们</a>
+	                    <a style="color: #4e4f53" href="">联系我们</a>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+<!-- 回到顶部 -->
+	<div id="fh" onclick="fh()">
+		<img src="img/fh.png"/>
+	</div>
+</body>
 </body>
 </html> 

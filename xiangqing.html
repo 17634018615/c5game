@@ -1,0 +1,586 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>c5game-CS:GO</title>
+<link rel="stylesheet" type="text/css" href="css/index.css">
+<link rel="stylesheet" type="text/css" href="css/xiangqing.css">
+<style type="text/css">
+	body,p,dl,dd,ul,ol,li,div,h1,h2,h3,h4,h5,h6,form,input,table,tr,td{
+	margin:0;
+	padding:0;
+}
+html{
+	font-family: sans-serif;
+	line-height: 1.15;
+}
+body{
+	font:14px/1.5 '\5FAE\8F6F\96C5\9ED1', '\5B8B\4F53', Arial, Helvetica, 'Helvetica Neue', Tahoma, sans-serif;
+	overflow-x:hidden;  
+	min-width: 1200px;
+	background: #121c27;
+	color:#fff;
+}
+ul,ol{
+	list-style:none;
+}
+img{
+	border: 0;
+}
+a{
+	text-decoration: none;
+	color:#fff;
+}
+</style>
+<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="js/cssTools.js" ></script>
+<script type="text/javascript" src="js/mover1810.js" ></script>
+<script type="text/javascript" src="js/spxq.js" ></script>
+</head>
+<body>
+<!-- 头部 -->
+	<div id="header">
+		<div id="headTop">
+			<a href="#">
+				<span>
+					<img src="img/c5logo.png"/>
+				</span>
+			</a>
+			<div class="guoji">
+				<ul class="htright">
+					<li class="zhong">
+						<a href="#"><img src="img/zg.jpg"></a>
+					</li>
+					<li class="wai yg">
+						<a href="#"><img src="img/yg.jpg"></a>
+					</li>
+					<li class="wai dg">
+						<a href="#"><img src="img/dg.jpg"></a>
+					</li>
+				</ul>
+			</div>
+			<div class="daohang">
+				<a href="#" id="dl01">登录</a>
+				<a href="#" id="zc01">注册用户</a>
+				<a href="#">我要充值</a>
+				<a href="#">我要出售</a>
+				<a href="#">库存估价</a>
+			</div>
+		</div>
+		<div id="headBtm">
+			<ul class="navLinks">
+				<li class="current"><a href="#">首页</a></li>
+				<li><a href="dota2.html">DOTA2</a></li>
+				<li><a href="csgo.html">CS:GO</a></li>
+				<li><a href="#">H1Z1</a></li>
+				<li class="jtys">
+					<a href="#">
+						军团要塞2
+						<b class="sanjiao"></b>
+					</a>
+					<ul class="menu">
+						<li><a href="#">steam</a></li>
+						<li><a href="#">收获日2</a></li>
+					</ul>
+				</li>
+				<li><a href="#">CDK&游戏</a></li>
+				<li><a href="#">游戏罐</a></li>
+				<li><a href="#">资讯</a></li>
+				<li><a href="gouwuche.html">我的背包</a></li>
+				<li><a href="#">个人中心</a></li>
+			</ul>
+		</div>
+	</div>
+<!-- center -->
+	<div id="center">
+		<div class="com-wrapper">
+			<div class="mod-navigation">
+				<a href="javascript:;">首页</a>
+				&gt;
+				<a href="javascript:;">
+					<span>CS:GO反恐精英：全球攻势</span>
+				</a>
+				&gt;
+				<span>M4A4（StatTrak™） | 咆哮 (破损不堪)</span>
+			</div>
+			<div class="productDetailsCn clearfix">
+				<div class="leftItems" style="overflow: visible;">
+					<div class="productInfo csgoInfo" style="height: 340px;">
+						<!-- 收藏 -->
+						<a href="javascript:;" class="collectbok collectbokplace" ;>
+							<div class="collect-not">
+								收藏
+								<em style="background-image: url(&quot;img/ico-collect.png&quot;);"></em>
+							</div>
+							<div class="collect-fulfil"></div>
+						</a>
+						<div class="img" id="oimg">
+							<!-- <img src="img/4dc4c50df0a58b4c8b38c5825f5c78fb.png" alt=""> -->
+						</div>
+						<div class="txt">
+							<div class="name" style="height: 20px;">
+								<!-- M4A4（StatTrak™） | 咆哮 (破损不堪) -->
+							</div>
+							<div class="rarity mt-30"><span style="color: orange;">违禁</span>
+							</div>
+							<div class="rarity mt-15">
+								<a href="">崭新出厂</a> 
+								<a href="">略有磨损</a> 
+								<a href="">久经沙场</a> 
+								<a href="javascript:;" class="active">破损不堪</a>
+							</div>
+							<div class="proposedPrice mt-15"><span>Steam参考价</span>：
+							<span class="c-4">￥<!--12841.38--></span>
+							</div>
+							<div class="averagePrice mt-15"><span style="width: 84px; display: inline-block; text-align: justify; letter-spacing: 55px;">起价</span>：
+								<span class="c-4">￥<!--23333.00--></span>
+							</div>
+							<div class="stock mt-15">
+								<span>当前在售</span>：<!--1-->件
+							</div>
+							<div class="bnts mt-10"><input type="button" value="批量购买" class="com-btn com-green"></div>
+							</div>
+					</div>
+					<div class="relatedInfo">
+						<div class="tabBtn clearfix">
+							<div class="single"><a href="" style="color: #d29208;">正在销售</a></div>
+							<div class="single"><a href="" style="">求购(0)</a></div>
+							<div class="single"><a href="" style="">销售历史</a></div>
+							<div class="single"><a href="" style="">价格曲线</a></div>
+						</div>
+						<div class="tabCn">
+							<div class="single">
+								<div class="csgoInfo">
+									<div class="filter clearfix">
+										<div class="group fl">
+											<div class="com-btn is-h35 J_option isFocus">
+	                                            查看全部
+	                                        </div> 
+	                                        <div class="com-btn is-h35 J_option">
+	                                            查看可立即取回
+	                                        </div>
+	                                    </div>
+	                                    <div class="group fr">
+	                                    	<label id="js-search-sticker" class="three-checkbox fl" style="margin-top: 8px;">
+	                                    		<i class="state"></i>印花
+	                                    	</label> 
+	                                    	<span class="steam-database--select">
+	                                    	<span class="select2 select2-container select2-container--default select2-container--below" dir="ltr" style="width: 78px;">
+	                                    		<span class="selection">
+	                                    				<span class="select2-selection select2-selection--single" role="combobox" aria-autocomplete="list" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-4mrn-container">
+	                                    					<span class="select2-selection__rendered" id="select2-4mrn-container" title="发货方式">
+	                                    					发货方式
+	                                    				</span>
+	                                    				<span class="select2-selection__arrow" role="presentation">
+	                                    					<b role="presentation">
+	                                    						
+	                                    					</b>
+	                                    				</span>
+	                                    			</span>
+	                                    		</span>
+	                                    		<span class="dropdown-wrapper" aria-hidden="true">
+	                                    			
+	                                    		</span>
+	                                    	</span>
+	                                    </span> 
+	                                    <span class="steam-database--select" style="position: relative;">
+	                                    	<img src="img/sortLabel.gif" style="position: absolute; top: -29px; left: 50%;">
+	                                    	 <select class="com-select_2 select2-hidden-accessible" tabindex="-1" aria-hidden="true">
+	                                    	 	<option value="0">
+	                                    	 	默认排序
+	                                    	 </option> 
+	                                    	 <option value="1">
+	                                    	 价格升序
+	                                    	</option> 
+	                                    	<option value="2">
+	                                    	价格降序
+	                                    </option> 
+	                                    <option value="3">
+	                                    磨损升序
+			                            </option> 
+			                            <option value="4">
+			                            磨损降序
+				                        </option>
+					                    </select>
+					                    <span class="select2 select2-container select2-container--default" dir="ltr" style="width: 78px;">
+					                    	<span class="selection">
+					                    		<span class="select2-selection select2-selection--single" role="combobox" aria-autocomplete="list" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-n6k3-container">
+					                    			<span class="select2-selection__rendered" id="select2-n6k3-container" title="默认排序">
+					                    			默认排序
+					                    		</span>
+					                    		<span class="select2-selection__arrow" role="presentation">
+					                    			<b role="presentation"></b>
+					                    		</span>
+					                    	</span>
+					                    </span>
+					                    <span class="dropdown-wrapper" aria-hidden="true">
+					                    	
+					                    </span>
+								                </span>
+								            </span>
+								        </div>
+									</div>
+									<table class="dataTable is-show sell-data" id="huopin">
+										<tr>
+											<td>
+												<div title="人工发货" class="personIcon"></div>
+												<div class="img lm r card-tooltip tooltipstered" style="position: relative; overflow: visible;">
+													<a href="/product-163528549" class="weapon-product-a">
+														<img src="img/eaf8d0154215b2f6c23919b08624b845.png" alt="M4A4（StatTrak™） | 咆哮 (破损不堪)">
+													</a>
+												</div>
+												<div class="description">
+													绝版暗金倒数第一
+	                                            </div>
+											</td>
+											<td>
+												<div class="mainInfo">
+													<div class="printing">
+														<img src="img/navi_holo.e523764fe81d4acf87952bfbd87a8ec30321c531.png" alt=" Natus Vincere（全息）| 2016年科隆锦标赛" title=" Natus Vincere（全息）| 2016年科隆锦标赛">
+													</div>
+													<div class="worn">
+														<div class="bar" title="0.39754128456115722656">
+															<div class="val" style="left:39.7541%;"></div>
+														</div>
+													</div>
+													<a href="javascript:;" target="_blank" class="glook">游戏中检视</a>
+												</div>
+												<div class="numberbok c-4">
+														<div title="0.39754128456115722656" class="number">0.39754
+														</div>
+												</div>
+											</td>
+											<td>
+												<div class="mt-15 tal" style="padding-left: 30px;"><div class="dib vam vvm"><span title="可立即取回" class="c-4 txt">取</span></div></div>
+											</td>
+											<td>
+												<div class="timeclass mt-5">
+													<em class="timeclass_ing"></em>
+												</div>
+											</td>
+											<td></td>
+											<td>
+												<span class="dib price c-4 mt-10">
+													￥23333.00
+												</span>
+											</td>
+											<td>
+												<a href="javascript:;" class="com-btn com-green is-h30 mt-5 js-add-cart-parent">加入购物车</a>
+											</td>
+										</tr>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="flooryou1">
+					<div class="content2">
+						<ul class="tabPaneUl" id="huanse">
+							<li>
+								<div class="tpuzuo">
+									<a href="">
+										<img src="img/ayrsbb.png"/>
+									</a>
+									<span class="">不朽</span>
+								</div>
+								<div class="tpuyou">
+									<p class="tpname">
+										<a href="">暗月肉山宝宝</a>
+									</p>
+									<p class="inof">
+										最高价：<span class="price">
+											￥33687.23</span>
+									</p>
+									<p>需求2件</p>
+								</div>
+							</li>
+							<li>
+								<div class="tpuzuo">
+									<a href="">
+										<img src="img/ayrsbb.png"/>
+									</a>
+									<span class="">不朽</span>
+								</div>
+								<div class="tpuyou">
+									<p class="tpname">
+										<a href="">暗月肉山宝宝</a>
+									</p>
+									<p class="inof">
+										最高价：<span class="price">
+											￥33687.23</span>
+									</p>
+									<p>需求2件</p>
+								</div>
+							</li>
+							<li>
+								<div class="tpuzuo">
+									<a href="">
+										<img src="img/ayrsbb.png"/>
+									</a>
+									<span class="">不朽</span>
+								</div>
+								<div class="tpuyou">
+									<p class="tpname">
+										<a href="">暗月肉山宝宝</a>
+									</p>
+									<p class="inof">
+										最高价：<span class="price">
+											￥33687.23</span>
+									</p>
+									<p>需求2件</p>
+								</div>
+							</li>
+							<li>
+								<div class="tpuzuo">
+									<a href="">
+										<img src="img/ayrsbb.png"/>
+									</a>
+									<span class="">不朽</span>
+								</div>
+								<div class="tpuyou">
+									<p class="tpname">
+										<a href="">暗月肉山宝宝</a>
+									</p>
+									<p class="inof">
+										最高价：<span class="price">
+											￥33687.23</span>
+									</p>
+									<p>需求2件</p>
+								</div>
+							</li>
+							<li>
+								<div class="tpuzuo">
+									<a href="">
+										<img src="img/ayrsbb.png"/>
+									</a>
+									<span class="">不朽</span>
+								</div>
+								<div class="tpuyou">
+									<p class="tpname">
+										<a href="">暗月肉山宝宝</a>
+									</p>
+									<p class="inof">
+										最高价：<span class="price">
+											￥33687.23</span>
+									</p>
+									<p>需求2件</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- 登录 -->
+	<div id="denglu">
+	</div>
+		<div class="xiaodl"></div>
+		<div class="waibox" id="dlck">
+			<label type="button" id="dlcuo" class="cuohao">×</label>
+			<div class="zhuti">
+				<div class="zhuti1">
+					<form id="dllb" action="php/loginCheck02.php" method="post">
+						<div class="dlZuo">
+							登录                    
+		            		<a href="#" id="zc03" class="zc1">立即注册
+		            		</a>
+		        		</div>
+		        		<div class="wbk">
+		            		<label class="huiyuan"></label>
+		            		<input id="" class="" placeholder="会员名" style="color: #999;"/>
+		            	</div>
+		        		<div class="wbk">
+		            		<label class="mima"></label>
+		            		<input id="" class="" placeholder="密码" style="color: #999;"/>
+		            	</div>
+		    			<div class="wbk">
+		            		<input id="" class="" placeholder="验证码" style="color: #999;"/>
+		            		<img style="cursor:pointer" class=""/>
+				        </div>
+		                <div class="mmkuang">
+		                    <span class="jzmm">
+		                    	<label style="font-weight: normal" class="mt-2" > 
+		                    		<input type="checkbox" checked="checked" value="1">记住密码
+		                    	</label>
+		                    </span>
+		                    <span class="wjmm"><a href="" class="" target="top" >忘记密码</a> </span>
+		                </div>
+		                <div class="dlan">
+		                    <button type="submit" class="dlanniu" tabindex="5" data-loading-text="正在登录...">登　录
+		                    </button>
+		                </div>
+		    		</form>
+		    	</div>
+		    	<div class="zhutgg">
+		    		<a href="" target="_blank"></a>
+		    		<a href="" target="_blank"></a>
+		    		<a href="" target="_blank"></a>
+		    	</div>
+	    	</div>
+		</div>
+<!-- 注册 -->
+		<div class="xiaodl"></div>
+		<div class="waibox" id="zhuce">
+			<label type="button" id="zccuo" class="cuohao">×</label>
+			<div class="zhuti">
+				<div class="zhuti1">
+					<form id="dllb" action="php/regsave.php" method="post">
+						<div class="dlZuo">
+							注册                    
+		            		<a href="#" id="dl03" class="zc1">已有账号 点击登录
+		            		</a>
+		        		</div>
+		        		<div class="wbk">
+		            		<label class="huiyuan"></label>
+		            		<input id="yonghu" name="username" class="" placeholder="会员名" style="color: #999;"/><span id="userSpan" style="color: #999;"></span>
+		            	</div>
+		        		<div class="wbk">
+		            		<label class="mima"></label>
+		            		<input id="mima" type="password" name="userpass" class="" placeholder="至少6位长度的数字或者字母组合" style="color: #999;"/><span style="color: #999;"></span>
+		            	</div>
+		            	<div class="wbk">
+		            		<label class="mima"></label>
+		            		<input  type="password" id="mima2" class="" placeholder="重复密码。" style="color: #999;" /><span style="color: #999;"></span>
+		            	</div>
+		            	<div class="wbk">
+		            		<label class="hyxm"></label>
+		            		<input id="userName"  name="truename" class="" placeholder="真实姓名(可选)" style="color: #999;"/><span style="color: #999;"></span>
+		            	</div>
+		            	<div class="wbk">
+		            		<label class="sfz"></label>
+		            		<input id="cardId"  name="usersfz" class="" placeholder="身份证号(可选)" style="color: #999;"/><span style="color: #999;"></span>
+		            	</div>
+		    			<div class="wbk">
+		            		<input id="" class="" placeholder="验证码"/>
+		            		<img style="cursor:pointer" class="" style="color: #999;"/>
+				        </div>
+		                <div class="mmkuang">
+		                    <span class="jzmm">
+		                    	<label style="font-weight: normal" class="mt-2" > 
+		                    		<input type="checkbox" value="1">我同意
+		                    		<a target="_blank" id="regist_rule" class="ft-gold" data-content="必须同意《服务条款》和《隐私权相关政策》" href="/activity/job/regulationsex">《服务条款》</a> 和 <a target="_blank" class="ft-gold" href="/activity/job/privacy">《隐私权相关政策》</a>
+		                    	</label>
+		                    </span>
+		                </div>
+		                <div class="dlan">
+		                    <button type="submit" class="dlanniu" tabindex="5" data-loading-text="正在登录...">注  册
+		                    </button>
+		                </div>
+		    		</form>
+		    	</div>
+		    	<div class="zhutgg">
+		    		<a href="" target="_blank"></a>
+		    		<a href="" target="_blank"></a>
+		    		<a href="" target="_blank"></a>
+		    	</div>
+	    	</div>
+		</div>
+</body>
+</html>
+<script type="text/javascript">
+
+
+	//获取url中的参数
+$(function(){
+    function getUrlParam(name){
+        //构造一个含有目标参数的正则表达式对象
+        var reg = new RegExp("(^|&)"+name+"=([^&]*)(&|$)");
+        //匹配目标函数
+        var r = window.location.search.substr(1).match(reg);
+        // 返回参数
+        if(r!=null) return unescape(r[2]);
+        return null;
+    }
+
+    //接收URL中的参数goodsId
+    var id = getUrlParam('goodsId');
+    var jsonN="";
+    var goodsName ="";
+    console.log(id);
+    $.ajax({
+    	"type":"get",
+    	"url":"php/getGoodsInfo.php",
+    	"dataType":"json",
+    	"data":{
+    	"goodsId":id
+    	},
+    	success:function(objs){
+    		console.log(objs);
+    		let htmlStr="";
+			htmlStr+=`<img src="${objs.goodsImg}" alt="">`;
+			$("#oimg").append(htmlStr)
+			$(".name").append(`${objs.goodsType}${objs.beiyong3} &brvbar; ${objs.goodsName}${objs.beiyong4}`);
+			$("#tigame").append(`${objs.goodsType}${objs.beiyong3} &brvbar; ${objs.goodsName}${objs.beiyong4}`);
+			$(".proposedPrice .c-4,.averagePrice .c-4").append(`￥${objs.goodsPrice}`)
+			$(".stock span").after(`：${objs.goodsCount}`)
+    	},
+    	
+    })
+
+   	$.ajax({
+    	"type":"get",
+    	"url":"php/getGoodsInfo.php",
+    	"dataType":"json",
+    	"data":{
+    	"goodsId":id
+    	},
+    	success:function(objs){
+    		console.log(objs);
+    		let htmlStr="";
+			let goodsNames=objs.goodsName
+			htmlStr += `<tr>
+							<td>
+								<div title="人工发货" class="personIcon"></div>
+								<div class="img lm r card-tooltip tooltipstered" style="position: relative; overflow: visible;">
+									<a href="javascript:;" class="weapon-product-a">
+										<img src="${objs.goodsImg}" alt="${objs.goodsName}">
+									</a>
+								</div>
+								<div class="description">
+									${objs.goodsDesc}
+						        </div>
+							</td>
+							<td>
+								<div class="mainInfo">
+									<div class="printing">
+										<img src="img/navi_holo.e523764fe81d4acf87952bfbd87a8ec30321c531.png" alt=" Natus Vincere（全息）| 2016年科隆锦标赛" title=" Natus Vincere（全息）| 2016年科隆锦标赛">
+									</div>
+									<div class="worn">
+										<div class="bar" title="${objs.beiyong2}">
+											<div class="val" style="left:${objs.beiyong2}%;"></div>
+										</div>
+									</div>
+									<a href="javascript:;" target="_blank" class="glook">游戏中检视</a>
+								</div>
+								<div class="numberbok c-4">
+										<div title="${objs.beiyong2}" class="number">${objs.beiyong2}
+										</div>
+								</div>
+							</td>
+							<td>
+								<div class="mt-15 tal" style="padding-left: 30px;"><div class="dib vam vvm"><span title="可立即取回" class="c-4 txt">取</span></div></div>
+							</td>
+							<td>
+								<div class="timeclass mt-5">
+									<em class="timeclass_ing"></em>
+								</div>
+							</td>
+							<td></td>
+							<td>
+								<span class="dib price c-4 mt-10">
+									￥${objs.goodsPrice}
+								</span>
+							</td>
+							<td>
+								<a href="javascript:;" class="com-btn com-green is-h30 mt-5 js-add-cart-parent">加入购物车</a>
+							</td>
+					</tr>`
+
+					$("#huopin").append(htmlStr);
+    	},
+    	
+    })
+})
+</script>
